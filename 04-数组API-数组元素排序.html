@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    排序方法
+//    reverse()翻转数组
+//    sort()即使是数组sort也是根据字符，从小到大排序
+//    1.reverse
+//    var arr=[1,2,3,4,5,6];
+//    var aaa=arr.reverse();
+//    console.log(arr);
+//    console.log(aaa);
+//    console.log(aaa===arr);
+
+
+//sotr()数组中元素的排序 从小到大
+//var arr=[7,2,1,6,5,3];
+//默认：按照首个字符的unicode编码进行排序 第一个相同就比较第二个
+//var aaa=arr.sort();
+//console.log(arr);
+//console.log(aaa);
+//console.log(aaa===arr);
+//   字符串排序
+//    var arr=["a","e","c","g"];
+//    var ccc=arr.sort();
+//    console.log(arr);
+//    console.log(ccc);
+//    console.log(arr===ccc);
+
+
+//  数组大小排序方法：sort（）；需要借助回调函数
+//    回调函数里面返回值如果是：参数一-参数二：升序
+//    var arr=[1,4,14,3,7,9];
+//    arr.sort(function(a,b){
+////        return a-b升序
+//        return b-a/*:降序*/
+//    })
+//    console.log(arr);
+//    根据冒泡原理
+//      两个for循环的
+//    var arr=[4,2,8,6,3,1,5];
+//
+//    console.log(fun(arr));
+//    function fun(a){
+//        for(var i=0;i< a.length-1;i++){
+//            for(var j=0;j< a.length-1-i;j++){
+//                if(a[j]>a[j+1]){
+//                    var temp=a[j];
+//                    a[j]=a[j+1];
+//                    a[j+1]=temp;
+//                }
+//            }
+//
+//        }
+//        return a;
+//    }这个是冒泡原理结合而成
+
+
+
+//    sort原理
+//var arr=[4,2,8,6,3,1,5];
+//var bbb=fun([3,9,6,0],function(b,c){
+//    return b-c;
+//});
+//console.log(bbb);
+//
+//
+//
+//function fun(a,fn){
+//外循环控制轮数，内循环控制次数，都是元素个数-1;
+//    for(var i=0;i< a.length-1;i++){
+//        for(var j=0;j< a.length-1-i;j++){
+//         次数优化，多比较一轮，少比较一次
+//            if(fn(a[j],a[j+1])>0){
+//             升幂排序
+//            把两个变量送到一个函数中;
+//                var temp=a[j];
+//                a[j]=a[j+1];
+//                a[j+1]=temp;
+//            }
+//        }
+//
+//    }
+//    return a;
+//}
+
+
+
+</script>
+</body>
+</html>

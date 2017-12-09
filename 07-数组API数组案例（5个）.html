@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    1.将一个字符串数组输出为|分割的形式，比如“刘备|张飞|关羽”。使用两种方式实现
+//       var arr=["甜心","守护","瑶瑶"];
+//       console.log(arr.join("|"));
+//    2.将一个字符串数组的元素的顺序进行反转。["a", "b", "c", "d"] -> [ "d","c","b","a"]。
+//       使用两种种方式实现。提示：第i个和第length-i-1个进行交换
+//      /*2-1.*/ var arr=["a","b","c","d"];
+//       console.log(arr.reverse());
+        /*2-2*/
+//        var arr=["a","b","c","d"];
+//
+//
+//
+//        for(var i=0;i<arr.length/2;i++){
+//            var temp=arr[i];
+//            arr[i]=arr[arr.length-1-i];
+//            arr[arr.length-1-i]=temp;
+//
+//        }
+//
+//        console.log(arr);
+
+
+
+
+//    3.工资的数组[1500, 1200, 2000, 2100, 1800],把工资超过2000的删除
+
+//       var arr=[1500,1200,2000,2100,1800];
+//       var newArry=arr.filter(function(ele,index,array){
+//       if(ele<2000){
+//           return true;
+//       } else{
+//           return false;
+//       }
+//})
+//console.log(newArry);
+
+
+//    4.["c", "a", "z", "a", "x", "a"]找到数组中每一个a出现的位置
+//       var arr=["c", "a", "z", "a", "x", "a"];
+//       arr.forEach(function(ele,index,array){
+//           if("a"===ele){
+//               console.log(index);
+//           }
+//       });
+
+
+//    5.编写一个方法去掉一个数组的重复元素
+//       var arr=["单波","映泰","单波","银泰","银泰","映泰"];
+////       外循环遍历老数组，内循环遍历新数组;
+////      判断：如果新数组中任何一个元素和老数组中的元素相同也不能添加进新数组
+//       var newArr=[];
+//       for(var i=0;i<arr.length;i++){
+//        var flag=true;
+//           for(var j=0;j<newArr.length;j++){
+//               if(arr[i]===newArr[j]){
+//                 flag=false;
+//                   break;
+//
+//               }
+//
+//
+//           }
+//           if(flag==true){
+//               newArr[newArr.length]=arr[i];
+//           }
+//       }
+
+
+//    字符串的不可变性
+//      var str="";
+//      for(var i=1;i<200000;i++){
+//          str+=i;
+//      }
+//     console.log(str);
+//      var arr=[];
+//     for(var i=1;i<200000;i++){
+//          arr[arr.length]=i;
+//      }
+//    console.log(arr);
+</script>
+</body>
+</html>

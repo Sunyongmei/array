@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    every()、filter()、forEach()、map()、some()
+//    返回：bool     arr     undefined  arr    bool
+      var arr=[111,222,333,444,555];
+//      1.every();
+//    对数组中每一项进行回调函数 如果都返回true every返回True；
+//    如果有一项返回false，则停止遍历 every返回false；不写默认返回false
+//    every();用法
+//       arr.every(function(a,b,c){
+//           console.log(a);元素
+//           console.log(b);索引值
+//           console.log(c);数组本身
+//           console.log("-----");数组本身
+//          数组中元素的赋值  把c[b]=值  a=有时候无法赋值
+
+
+//       })
+//    every返回一个bool值 全部是true才是true 有一个是false结果就是false
+//      var bool= arr.every(function(ele,index,array){
+//           if(ele<100){
+//               return true;
+//
+//           }else{
+//            return false;
+//        }
+//       })
+//    alert(bool);
+//    2.filter
+//  对数组中每一项运行回调函数，该函数返回结果是true的项组成的新数组
+//  新数组是有老数组中的元素组成的，return为true的项;
+//var newArr = arr.filter(function (element, index, array) {
+//        //只要是奇数，就组成数组;(数组中辨别元素)
+//        if(element%2 === 0){
+//            return true;
+//        }else{
+//            return false;
+//        }
+//    })
+//
+//    console.log(newArr);
+
+//3.forEach();   和for循环一样；没有返回值;
+//   var sum=0;
+//   var aaa=arr.forEach(function(ele,index,array){
+//       sum+=ele;
+//   })
+
+// console.log(sum);总和
+//    console.log(aaa);undefined
+//4.map();
+//  对数组中每一项运行回调函数，返回该函数的结果组成的新数组
+//return什么新数组中就有什么;不return返回undefined;
+//对数组二次加工
+//    var newArry=arr.map(function(ele,index,array){
+//        if(index==2){
+//            return;
+//        }
+//        return ele*10;
+//    })
+//    console.log(newArry);
+
+//5.some();
+//对数组中每一项运行回调函数，如果该函数对某一项返回true，则some返回true
+//有一个成功，就胜利了！！！
+//  var newArry=arr.some(function(ele,index,array){
+//      if(ele%3==0){
+//          return true;
+//      }
+//      return false;
+//  })
+//alert(newArry);
+//有一个是true就返回了
+
+</script>
+</body>
+</html>

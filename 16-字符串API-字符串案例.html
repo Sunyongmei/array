@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    //1.截取字符串"我爱中华人民共和国"，中的"中华"
+    //2."abcoefoxyozzopp"查找字符串中所有o出现的位置
+    //3.把字符串中所有的o替换成!
+    //4.把字符串中的所有空白去掉'   abc       xyz  a    123   '
+    //5.判断一个字符串中出现次数最多的字符，统计这个次数
+    //6.获取url中?后面的内容，并转化成对象的形式。例如：http://www.itheima.com/login?name=zs&age=18&a=1&b=2
+
+
+
+//    1.截取字符串"我爱中华人民共和国"，中的"中华"
+//     var str="我爱中华人民共和国";
+//      console.log(str.substr(2,2));
+
+//    2."abcoefoxyozzopp"查找字符串中所有o出现的位置
+//    var str="abcoefoxyozzopp";
+//    for(var i=0;i<str.length;i++){
+//        if(str.charAt(i)==="o"){
+//            console.log(i);
+//        }
+//    }
+//    3.把字符串中所有的o替换成!
+//    var str="aobshdomfoofnoomb";
+//
+//
+//    console.log(str.replace(/o/g,"!"));
+
+//    4.把字符串中的所有空白去掉'   abc       xyz  a    123   '
+//    var str='   abc       xyz  a    123   ';
+//    console.log(str);
+//    console.log(str.replace(/ /g,""));
+
+//    5.判断一个字符串中出现次数最多的字符，统计这个次数
+//      var str = "abcoefoxyozzopp";
+////    a:1b:1c:1....键值对  对象或者json记录;
+////    遍历字符串中的每一个元素，从json/对象中查找.
+////    有的话，值自增1;没有的话，设置该属性，值为1;
+//      var json={};
+////    将来往里面装属性和值
+////    属性就是字符串中的元素，值就是出现的次数
+////      for循环遍历
+//for(var i=0;i<str.length;i++){
+//    var zimu=str.charAt(i);
+//    /*str里面的每个字符串 根据i自增可以获取到每一个*/
+//    if(json[zimu]===undefined){
+////        把字符作为json中的属性查找，如果为undefined就说明不存在;
+////        没有就添加一个
+//        json[zimu]=1;
+//    }else{
+//        json[zimu]+=1;
+//    }
+//}
+//    console.log(json);
+
+//    6.获取url中?后面的内容，并转化成对象的形式。例如：http://www.itheima.com/login?name=zs&age=18&a=1&b=2
+//      var str1 = "http://www.itheima.com/login?name=zs&age=18&a=1&b=2";
+//    //    //思路：找到?,然后截取到最末尾;把字符串按照&分割;可以再次按照=分割，然后创建对象
+//     var index=str1.lastIndexOf("?");
+//     var str2=str1.slice(index+1);
+//     console.log(str2);
+//    //    //转换成数组；
+//    var arr=str2.split("&");
+//    console.log(arr);
+//    var obj=new Object();
+//
+//    for循环把数组中的每一个元素都遍历出来，然后前面的做属性，后面的做值;
+//    for(var i=0;i<arr.length;i++){
+//        var a=arr[i].split("=");
+//        obj[a[0]]=a[1];
+//
+//    }
+//console.log(obj);
+    //        //把数组中的元素，再次切割，然后根据索引值设置属性和值;
+
+    //        //新数组中的第一个做属性，第二个做值;
+
+
+
+</script>
+</body>
+</html>

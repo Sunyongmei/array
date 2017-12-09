@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//   concat() 拼接字符串，等效于+ +；
+//   slice() 从start位置开始 到end结束end取不到
+//   substr()从start位置开始。截取length个字符
+//   substring()从start位置开始 截取到end位置 end取不到
+     var str1="111";
+     var str2="222";
+     var str3=str1.concat(str2);
+//     console.log(str3);
+
+//     var str3=str1+str2;
+//     console.log(str3);
+
+//   2.slice() 从start位置开始，截取到end位置，end取不到
+//   和数组的完全一样： 字符串.slice(开始索引值，结束索引值);
+//     console.log(str3.slice(3));/*从索引值为3的截取到最后*/
+//     console.log(str3.slice(0,3));包左不包右
+//     console.log(str3.slice(-3));从后面截取三个
+//     console.log(str3.slice(3,0));前面大 后面小就是空的字符串
+
+
+//3.substr()   		//开始索引值，截取几个;
+//console.log(str3.substr(3));从索引值开始到最末尾
+//console.log(str3.substr(3,2));/*从第三个索引值开始截取两个长度*/
+//console.log(str3.substr(0));就是截取整个字符串
+//前后不一样大没问题，因为第二个参数是截取几个的意思;
+//    4.substring（） 开始索引值，结束索引值;
+
+//console.log(str3.substring(3));从索引值开始到最末尾
+//console.log(str3.substring(0,3));包左不包右
+//console.log(str3.substring(0));/*就是截取整个字符串*/
+//console.log(str3.substring(3,0));//智能调换
+
+
+
+
+
+
+</script>
+</body>
+</html>
